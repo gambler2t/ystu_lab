@@ -14,16 +14,16 @@ if lang == 'EN':
     s = 'Enter second number:  '
     r = 'Result: '
     e = 'Error'
-    v = 'Enter "yes" to continue and "no" to finish:  '
+    v = 'Enter "y" to continue and other key to finish:  '
 if lang == 'RU':
     f = 'Введите первое число:  '
     o = 'Введите операцию (+,-, /, *):  '
     s = 'Введите второе число:  '
     r = 'Результат: '
     e = 'Ошибка'
-    v = 'Введите "yes", чтобы продолжить, и "no", чтобы закончить:  '
-prodolzhit = 'yes'
-while prodolzhit == 'yes':
+    v = 'Введите "y", чтобы продолжить, и любую клавишу, чтобы закончить:  '
+prodolzhit = 'y'
+while prodolzhit == 'y':
     f_num = float(input(f))
     oper = input(o)
     sec_num = float(input(s))
@@ -38,5 +38,3 @@ while prodolzhit == 'yes':
     else:
         print(e)
     prodolzhit = input(v)
-    if prodolzhit == 'no':
-        break;
