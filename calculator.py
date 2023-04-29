@@ -13,4 +13,4 @@ while prodolzhit == 'y':
         print(f_num / s_num)
     else:
         print("Error")
-    prodolzhit = input("Введите 'y', что бы продолжить, или любую клавишу, чтобы завершить хи>>")
+    prodolzhit = input("Введите 'y', что бы продолжить, или любую клавишу, чтобы завершить>>")
