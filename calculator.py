@@ -1,16 +1,24 @@
-prodolzhit = 'y'
-while prodolzhit == 'y':
-    f_num = float(input("Введите первое число>>"))
-    oper = input("Введите операцию>>")
-    s_num = float(input("Введите второе число>>"))
+lang = 'RU'
+if lang == 'RU':
+    f = 'Введите первое число:  '
+    o = 'Введите операцию (+,-, /, *):  '
+    s = 'Введите второе число:  '
+    r = 'Результат: '
+    e = 'Ошибка'
+    v = 'Введите "yes", чтобы продолжить, и любую клавишу, чтобы закончить:  '
+prodolzhit = 'yes'
+while prodolzhit == 'yes':
+    f_num = float(input(f))
+    oper = input(o)
+    sec_num = float(input(s))
     if oper == '+':
-        print(f_num + s_num)
+        print(r, f_num + sec_num)
     elif oper == '-':
-        print(f_num - s_num)
-    elif oper == '*':
-        print(f_num * s_num)
+        print(r, f_num - sec_num)
     elif oper == '/':
-        print(f_num / s_num)
+        print(r, f_num / sec_num)
+    elif oper == '*':
+        print(r, f_num * sec_num)
     else:
-        print("Error")
-    prodolzhit = input("Введите 'y', что бы продолжить, или любую клавишу, чтобы завершить>>")
+        print(e)
+    prodolzhit = input(v)
