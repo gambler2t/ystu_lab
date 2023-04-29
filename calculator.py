@@ -1,3 +1,4 @@
+print('Привет, мой сосед!')
 lang = 'EN'
 lang_opt = input('Enter L to change language or other key to continue:  ')
 while lang_opt == 'l':
@@ -13,16 +14,16 @@ if lang == 'EN':
     s = 'Enter second number:  '
     r = 'Result: '
     e = 'Error'
-    v = 'Enter "y" to continue and other key to finish:  '
+    v = 'Enter "yes" to continue and "no" to finish:  '
 if lang == 'RU':
     f = 'Введите первое число:  '
     o = 'Введите операцию (+,-, /, *):  '
     s = 'Введите второе число:  '
     r = 'Результат: '
     e = 'Ошибка'
-    v = 'Введите "y", чтобы продолжить, и любую клавишу, чтобы закончить:  '
-prodolzhit = 'y'
-while prodolzhit == 'y':
+    v = 'Введите "yes", чтобы продолжить, и "no", чтобы закончить:  '
+prodolzhit = 'yes'
+while prodolzhit == 'yes':
     f_num = float(input(f))
     oper = input(o)
     sec_num = float(input(s))
@@ -37,3 +38,5 @@ while prodolzhit == 'y':
     else:
         print(e)
     prodolzhit = input(v)
+    if prodolzhit == 'no':
+        break;
